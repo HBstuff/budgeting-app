@@ -1,0 +1,26 @@
+/* Chrome, Safari, Edge, Oper */
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} */
+
+/* Firefox */
+/* input[type=number] {
+  -moz-appearance: textfield;
+}
+
+tr.inputs input {
+    border-style: solid;
+    border-color: black;
+    border: 1px;
+    background-color: grey;
+}
+
+tr.inputs button {
+    background-color: grey;
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
