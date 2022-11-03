@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MailController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\LandingController;
@@ -30,6 +31,10 @@ Route::post('/newsletter',
 // Show App Home View
 Route::get('/app/',
     [TransactionController::class, 'index'])->middleware('auth');
+
+// Send Email
+Route::post('/app/email',
+    [MailController::class, 'sendMail']);
 
 // Show App News View
 Route::get('/app/news',

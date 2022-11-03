@@ -1,6 +1,13 @@
 <x-layout>
 
 <div class="flex">
+<form method="POST" action="/app/email">
+@csrf
+    <button class=" w-5 h-5 bg-red-500" type="submit"></button>
+</form>
+</div>
+
+<div class="flex">
     <div class="w-1/2 flex justify-center">
         <div class="w-full p-2 m-2 rounded-3xl border border-solid border-gray-300">
             <h2 class="text-center text-3xl text-gray-600 font-light pb-3">STATISTICS</h2>
